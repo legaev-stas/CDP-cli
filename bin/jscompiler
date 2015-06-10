@@ -1,4 +1,13 @@
 #! /usr/bin/env node
 
 var args = require('optimist').argv;
-console.log(args)
+var fs = require('fs');
+var path = require('path');
+
+if(args.help){
+    fs.readFile(path.join(__dirname, '..', 'help.txt'), function(err, data){
+        if (err) throw err;
+        console.log(data.toString())
+        process.exit(0);
+    })
+}
