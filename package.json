@@ -1,0 +1,11 @@
+{
+  "name": "jscompiler",
+  "version": "1.0.0",
+  "description": "concatenate and minify javascript",
+  "author": "JavaScript Compiler",
+  "license": "MIT",
+  "preferGlobal": true,
+  "bin": {
+    "jscompiler": "bin/jscompiler"
+  }
+}
