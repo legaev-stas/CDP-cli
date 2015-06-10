@@ -1,4 +1,4 @@
 #! /usr/bin/env node
 
-console.log('jscompiler');
-
+var args = require('optimist').argv;
+console.log(args)
