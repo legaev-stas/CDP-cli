@@ -9,6 +9,9 @@
     "jscompiler": "bin/jscompiler"
   },
   "dependencies": {
+    "filendir": "0.0.1",
+    "glob": "^5.0.10",
+    "minify": "^1.4.18",
     "optimist": "^0.6.1"
   }
 }

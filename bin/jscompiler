@@ -4,6 +4,7 @@ var args = require('optimist').argv;
 var fs = require('fs');
 var path = require('path');
 var questionaire = require('../questionaire');
+var minificator = require('../minificator');
 var config;
 
 if(args.help){
@@ -31,9 +32,7 @@ var questions = [{
 
 
 questionaire(config, questions, function(err){
-    console.log('Running JS compilation:')
-    console.log('Sources: ' + config.src);
-    console.log('Destination:' + config.dest);
+    minificator(config.src, config.dest);
 });
 
 
